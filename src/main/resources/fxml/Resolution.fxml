@@ -7,8 +7,8 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ensim.sudokusolver.controler.ScanGrilleController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1">
     <stylesheets>
-        <URL value="@/styles/ScanGrille.css"/>
+        <URL value="@/styles/Resolution.css"/>
     </stylesheets>
 </AnchorPane>

@@ -1,2 +1,7 @@
-D:\Rémy\Documents\NetBeansProjects\mavenproject1\SudokuSolver\src\main\java\fr\ensim\sudokusolver\FXMLController.java
-D:\Rémy\Documents\NetBeansProjects\mavenproject1\SudokuSolver\src\main\java\fr\ensim\sudokusolver\MainApp.java
+D:\Rémy\Documents\NetBeansProjects\mavenproject1\SudokuSolver\SudokuSolverIHM\src\main\java\fr\ensim\sudokusolver\controler\HomeController.java
+D:\Rémy\Documents\NetBeansProjects\mavenproject1\SudokuSolver\SudokuSolverIHM\src\main\java\fr\ensim\sudokusolver\controler\ViewControler.java
+D:\Rémy\Documents\NetBeansProjects\mavenproject1\SudokuSolver\SudokuSolverIHM\src\main\java\fr\ensim\sudokusolver\controler\ScanGrillecontroller.java
+D:\Rémy\Documents\NetBeansProjects\mavenproject1\SudokuSolver\SudokuSolverIHM\src\main\java\fr\ensim\sudokusolver\controler\ChoixAideController.java
+D:\Rémy\Documents\NetBeansProjects\mavenproject1\SudokuSolver\SudokuSolverIHM\src\main\java\fr\ensim\sudokusolver\controler\ResolutionController.java
+D:\Rémy\Documents\NetBeansProjects\mavenproject1\SudokuSolver\SudokuSolverIHM\src\main\java\fr\ensim\sudokusolver\MainApp.java
+D:\Rémy\Documents\NetBeansProjects\mavenproject1\SudokuSolver\SudokuSolverIHM\src\main\java\fr\ensim\sudokusolver\controler\EntrerGrilleController.java

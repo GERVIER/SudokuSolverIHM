@@ -1,14 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml" fx:controller="fr.ensim.sudokusolver.FXMLController">
-    <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
-    </children>
-</AnchorPane>
+<HBox minWidth="600.0" stylesheets="@../styles/EntrerGrille.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane maxHeight="1.7976931348623157E308" maxWidth="400.0" minHeight="400.0" minWidth="400.0" HBox.hgrow="NEVER">
+         <children>
+            <GridPane gridLinesVisible="true" layoutX="20.0" layoutY="25.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="40.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="40.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children>
+      </Pane>
+      <GridPane alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="400.0" minWidth="200.0" HBox.hgrow="ALWAYS">
+        <columnConstraints>
+          <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" vgrow="NEVER" />
+          <RowConstraints maxHeight="70.0" minHeight="10.0" valignment="TOP" vgrow="NEVER" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="249.0" valignment="BOTTOM" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <Button minHeight="50.0" minWidth="125.0" mnemonicParsing="false" text="Grille 9*9" GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/ic_grillePT.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <GridPane.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </GridPane.margin>
+               <styleClass>
+                  <String fx:value="button9X9" />
+                  <String fx:value="button" />
+               </styleClass>
+            </Button>
+            <Button minHeight="50.0" minWidth="125.0" mnemonicParsing="false" text="Grille 16*16" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/ic_grilleGR.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin>
+               <styleClass>
+                  <String fx:value="button16x16" />
+                  <String fx:value="button" />
+               </styleClass>
+            </Button>
+            <Button minHeight="50.0" minWidth="150.0" mnemonicParsing="false" text="Valider" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="20.0" />
+               </GridPane.margin>
+               <styleClass>
+                  <String fx:value="buttonValidate" />
+                  <String fx:value="button" />
+               </styleClass>
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/ic_tick.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </GridPane>
+   </children>
+</HBox>

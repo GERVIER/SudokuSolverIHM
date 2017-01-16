@@ -1,3 +1,48 @@
-.button {
-    -fx-font-weight: bold;
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    
+}
+
+.button{
+    -fx-border-width: 2px;
+    -fx-border-radius: 3px;
+}
+
+.button9X9{
+    -fx-background-color: #b4a7d6;
+}
+
+.button9X9:hover{
+    -fx-border-color: #7360a4;
+}
+
+.button9X9:focused{
+    -fx-border-color: #7360a4;
+}
+
+.button16x16{
+    -fx-background-color: #9fc5f8;
+}
+
+.button16x16:hover{
+    -fx-border-color: #6289be;
+}
+
+.button16x16:focused{
+    -fx-border-color: #6289be;
+}
+
+.buttonValidate{
+    -fx-background-color: #b4a7d6;
+}
+
+.buttonValidate:hover{
+    -fx-border-color: #8f7dbe;
+}
+
+.buttonValidate:focused{
+    -fx-border-color: #8f7dbe;
 }
