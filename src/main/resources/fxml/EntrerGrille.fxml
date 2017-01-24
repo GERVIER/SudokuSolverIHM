@@ -30,7 +30,7 @@
             </GridPane>
          </children>
          <HBox.margin>
-            <Insets left="10.0" top="10.0" />
+            <Insets bottom="10.0" left="10.0" top="10.0" />
          </HBox.margin>
       </Pane>
       <GridPane alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="400.0" minWidth="200.0" HBox.hgrow="ALWAYS">

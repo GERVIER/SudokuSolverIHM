@@ -48,7 +48,7 @@ public class EntrerGrilleController implements Initializable {
         try {
 			GridPane grdSelect = FXMLLoader.load(getClass().getResource("/fxml/selectChiffre.fxml"));
 			gridContainer.getChildren().add(grdSelect);
-			grdSelect.setVisible(false);
+			//grdSelect.setVisible(false);
 			
 	        labelList = new ArrayList<>();
 
@@ -76,11 +76,9 @@ public class EntrerGrilleController implements Initializable {
             @Override
             public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
                 if ((double) newValue < gridContainer.getHeight()) {
-                	sudokuGrid.setPrefHeight(newValue.doubleValue()-40);
-                	sudokuGrid.setPrefWidth(newValue.doubleValue()-40);
+                	sudokuGrid.setPrefHeight(newValue.doubleValue());
+                	sudokuGrid.setPrefWidth(newValue.doubleValue());
                 }
-
-
             }
         });
 
@@ -88,8 +86,8 @@ public class EntrerGrilleController implements Initializable {
             @Override
             public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
                 if ((double) newValue < gridContainer.getWidth()) {
-                	sudokuGrid.setPrefHeight(newValue.doubleValue()-40);
-                	sudokuGrid.setPrefWidth(newValue.doubleValue()-40);
+                	sudokuGrid.setPrefHeight(newValue.doubleValue());
+                	sudokuGrid.setPrefWidth(newValue.doubleValue());
                 }
 
             }
@@ -106,7 +104,7 @@ public class EntrerGrilleController implements Initializable {
             		selectedCase.setStyle("");
             	}
             	selectedCase = l;
-            	selectedCase.setStyle("-fx-background-color: grey;");
+            	selectedCase.setStyle("-fx-background-color: #d7ab7a;");
             } else if (event.getButton() == MouseButton.SECONDARY) {
                 l.setText(" ");
             }
