@@ -8,8 +8,7 @@ package fr.ensim.sudokusolver.controler;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -25,38 +24,57 @@ import javafx.stage.Stage;
  *
  * @author Ninja
  */
-public class HomeController implements Initializable{
-    
-    @FXML
-    private Button enterGridButton;
-    
-    /**
-     * Initializes the controller class.
-     * @param url
-     * @param rb
-     */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-        enterGridButton.setOnAction(enterGridClick);
-    }
-    
-        
-    public EventHandler<ActionEvent> enterGridClick = new EventHandler<ActionEvent>() {
-        @Override
-        public void handle(ActionEvent event){
-            try {
-                Stage stage;
-                Parent enterGrid;
-                Button b= (Button) event.getSource();
-                stage = (Stage) b.getScene().getWindow();
-                enterGrid = FXMLLoader.load(getClass().getResource("/fxml/EntrerGrille.fxml"));
-                Scene scene = new Scene(enterGrid);
-                stage.setScene(scene);
-            } catch (IOException ex) {
-                Logger.getLogger(ViewControler.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-    };
-   
+public class HomeController implements Initializable {
+
+	@FXML
+	private Button enterGridButton;
+
+	/**
+	 * Initializes the controller class.
+	 * 
+	 * @param url
+	 * @param rb
+	 */
+	@Override
+	public void initialize(URL url, ResourceBundle rb) {
+		// TODO
+		enterGridButton.setOnAction(enterGridClick);
+	}
+
+	public EventHandler<ActionEvent> enterGridClick = new EventHandler<ActionEvent>() {
+		@Override
+		public void handle(ActionEvent event) {
+			try{
+				Stage stage;
+				Button b = (Button) event.getSource();
+				stage = (Stage) b.getScene().getWindow();
+
+				switchToView("/fxml/EntrerGrille.fxml", stage);
+			}catch (IOException ex) {
+			}
+		}
+	};
+
+	/**
+	 * Permet de changer de vue
+	 *
+	 * @param view
+	 *            La nouvelle vue voulu
+	 * @param stage
+	 *            La fenetre pour la quelle la vue est à changer
+	 * @throws IOException
+	 */
+	public void switchToView(String view, Stage stage) throws IOException {
+		Parent newView;
+		double h = stage.getHeight();
+		double w = stage.getWidth();
+
+		newView = FXMLLoader.load(getClass().getResource(view));
+		Scene scene = new Scene(newView);
+
+		stage.setScene(scene);
+		stage.setHeight(h);
+		stage.setWidth(w);
+	}
+
 }

@@ -12,35 +12,26 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<HBox minWidth="600.0" stylesheets="@../styles/EntrerGrille.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ensim.sudokusolver.controler.EntrerGrilleController">
+<HBox minHeight="400.0" minWidth="600.0" stylesheets="@../styles/Home.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ensim.sudokusolver.controler.EntrerGrilleController">
    <children>
       <Pane fx:id="gridContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="400.0" minWidth="400.0" HBox.hgrow="ALWAYS">
          <children>
-            <GridPane fx:id="sudokuGrid" gridLinesVisible="true" layoutX="20.0" layoutY="25.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+            <GridPane fx:id="sudokuGrid" styleClass="sudokuGrille" stylesheets="@../styles/Home.css">
               <columnConstraints>
-                <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="40.0" />
-                <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="40.0" />
-                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="40.0" />
-                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="40.0" />
-                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="40.0" />
-                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="40.0" />
-                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="40.0" />
-                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="40.0" />
-                  <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="40.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" />
+                <ColumnConstraints hgrow="SOMETIMES" />
+                <ColumnConstraints hgrow="SOMETIMES" />
               </columnConstraints>
               <rowConstraints>
-                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="40.0" prefHeight="40.0" valignment="CENTER" vgrow="ALWAYS" />
-                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="40.0" prefHeight="40.0" vgrow="ALWAYS" />
-                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="40.0" prefHeight="40.0" vgrow="ALWAYS" />
-                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="40.0" prefHeight="40.0" vgrow="ALWAYS" />
-                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="40.0" prefHeight="40.0" vgrow="ALWAYS" />
-                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="40.0" prefHeight="40.0" vgrow="ALWAYS" />
-                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="40.0" prefHeight="40.0" vgrow="ALWAYS" />
-                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="40.0" prefHeight="40.0" vgrow="ALWAYS" />
-                  <RowConstraints maxHeight="1.7976931348623157E308" minHeight="40.0" prefHeight="40.0" vgrow="ALWAYS" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
               </rowConstraints>
             </GridPane>
          </children>
+         <HBox.margin>
+            <Insets left="10.0" top="10.0" />
+         </HBox.margin>
       </Pane>
       <GridPane alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="400.0" minWidth="200.0" HBox.hgrow="ALWAYS">
         <columnConstraints>
