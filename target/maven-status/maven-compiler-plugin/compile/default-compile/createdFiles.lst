@@ -1,8 +1,11 @@
-fr\ensim\sudokusolver\controler\ResolutionController.class
-fr\ensim\sudokusolver\controler\EntrerGrilleController.class
-fr\ensim\sudokusolver\controler\ScanGrillecontroller.class
+fr\ensim\sudokusolver\controler\EntrerGrilleController$3.class
 fr\ensim\sudokusolver\controler\ViewControler.class
-fr\ensim\sudokusolver\controler\ChoixAideController.class
 fr\ensim\sudokusolver\MainApp.class
 fr\ensim\sudokusolver\controler\HomeController$1.class
 fr\ensim\sudokusolver\controler\HomeController.class
+fr\ensim\sudokusolver\controler\EntrerGrilleController$1.class
+fr\ensim\sudokusolver\controler\ResolutionController.class
+fr\ensim\sudokusolver\controler\EntrerGrilleController$2.class
+fr\ensim\sudokusolver\controler\EntrerGrilleController.class
+fr\ensim\sudokusolver\controler\ScanGrillecontroller.class
+fr\ensim\sudokusolver\controler\ChoixAideController.class

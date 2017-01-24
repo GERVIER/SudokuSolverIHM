@@ -1,6 +1,5 @@
 package fr.ensim.sudokusolver;
 
-import fr.ensim.sudokusolver.controler.ViewControler;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
@@ -15,7 +14,6 @@ public class MainApp extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/Home.fxml"));
         
         Scene scene = new Scene(root);
-        //scene.getStylesheets().add("/styles/EntrerGrille.css");
         
         stage.setTitle("JavaFX and Maven");
         
