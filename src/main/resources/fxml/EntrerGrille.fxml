@@ -75,7 +75,7 @@
                   <String fx:value="BTjaune" />
                </styleClass>
             </Button>
-            <Button maxHeight="200.0" maxWidth="450.0" minHeight="50.0" minWidth="150.0" mnemonicParsing="false" text="Valider" GridPane.rowIndex="2">
+            <Button fx:id="bt_valid" maxHeight="200.0" maxWidth="450.0" minHeight="50.0" minWidth="150.0" mnemonicParsing="false" text="Valider" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets bottom="20.0" top="200.0" />
                </GridPane.margin>

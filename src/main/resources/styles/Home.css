@@ -37,6 +37,17 @@
 }
 
 /*
+ * AIDE
+ */
+
+.panneauAide{
+	-fx-background-color: #a2c4c9;
+	-fx-border-color: #333333;
+	-fx-border-width: 2px;
+
+}
+
+/*
  * CSS DES BOUTONS
  */
 .boutonBase{
@@ -51,9 +62,17 @@
     -fx-padding: 8;
 }
 
+
 .boutonBase:hover{
   -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 2, 0.0 , 0 , 1 );
 }
+
+.BTBlanc{
+  -fx-text-fill: black;
+}
+
+/* BLEU
+*/
 
 .BTBleu{
     -fx-background-color: linear-gradient(#337ab7, #2e6da4);

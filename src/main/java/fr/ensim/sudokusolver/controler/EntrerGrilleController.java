@@ -12,17 +12,22 @@ import java.util.ResourceBundle;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Point2D;
 import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -40,6 +45,9 @@ public class EntrerGrilleController implements Initializable {
 	ArrayList<Label> labelList;
 	GridPane grdSelect;
 	Label selectedCase;
+	
+	@FXML
+	Button bt_valid;
 
 	/**
 	 * Initializes the controller class.
@@ -48,6 +56,7 @@ public class EntrerGrilleController implements Initializable {
 	public void initialize(URL url, ResourceBundle rb) {
 
 		try {
+			bt_valid.setOnAction(Valid);
 			grdSelect = FXMLLoader.load(getClass().getResource("/fxml/selectChiffre.fxml"));
 			gridContainer.getChildren().add(grdSelect);
 			grdSelect.setVisible(false);
@@ -159,5 +168,41 @@ public class EntrerGrilleController implements Initializable {
 
 		return new Point2D(x, y);
 	}
+	
+	private EventHandler<ActionEvent> Valid = new EventHandler<ActionEvent>() {
+		@Override
+		public void handle(ActionEvent event) {
+			try{
+				Stage stage;
+				Button b = (Button) event.getSource();
+				stage = (Stage) b.getScene().getWindow();
 
+				switchToView("/fxml/Resolution.fxml", stage);
+			}catch (IOException ex) {
+			}
+		}
+	};
+
+	/**
+	 * Permet de changer de vue
+	 *
+	 * @param view
+	 *            La nouvelle vue voulu
+	 * @param stage
+	 *            La fenetre pour la quelle la vue est à changer
+	 * @throws IOException
+	 */
+	public void switchToView(String view, Stage stage) throws IOException {
+		Parent newView;
+		double h = stage.getHeight();
+		double w = stage.getWidth();
+
+		newView = FXMLLoader.load(getClass().getResource(view));
+		Scene scene = new Scene(newView);
+
+		stage.setScene(scene);
+		stage.setHeight(h);
+		stage.setWidth(w);
+	}
+	
 }
