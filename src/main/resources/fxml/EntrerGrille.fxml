@@ -30,7 +30,7 @@
             </GridPane>
          </children>
          <HBox.margin>
-            <Insets bottom="10.0" left="10.0" top="10.0" />
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </HBox.margin>
       </Pane>
       <GridPane alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="400.0" minWidth="200.0" HBox.hgrow="ALWAYS">
@@ -63,7 +63,7 @@
                <graphic>
                   <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../img/ic_grilleGR.png" />
+                        <Image url="@../img/ic_grillePT.png" />
                      </image>
                   </ImageView>
                </graphic>

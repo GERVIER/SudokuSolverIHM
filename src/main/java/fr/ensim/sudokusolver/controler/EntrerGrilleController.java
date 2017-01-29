@@ -81,10 +81,13 @@ public class EntrerGrilleController implements Initializable {
 					sudokuGrid.setPrefHeight(newValue.doubleValue());
 					sudokuGrid.setPrefWidth(newValue.doubleValue());
 					
-					Point2D pt = getGridCoord(gridContainer, selectedCase);
-					double x = pt.getX() - (grdSelect.getWidth() - selectedCase.getWidth()) / 2;
-					double y = pt.getY() - (grdSelect.getHeight() - selectedCase.getHeight()) / 2;
-					grdSelect.relocate(x, y);
+					if(selectedCase != null){
+						Point2D pt = getGridCoord(gridContainer, selectedCase);
+						double x = pt.getX() - (grdSelect.getWidth() - selectedCase.getWidth()) / 2;
+						double y = pt.getY() - (grdSelect.getHeight() - selectedCase.getHeight()) / 2;
+						grdSelect.relocate(x, y);
+					}
+
 				}
 			}
 		});
@@ -96,10 +99,13 @@ public class EntrerGrilleController implements Initializable {
 					sudokuGrid.setPrefHeight(newValue.doubleValue());
 					sudokuGrid.setPrefWidth(newValue.doubleValue());
 					
-					Point2D pt = getGridCoord(gridContainer, selectedCase);
-					double x = pt.getX() - (grdSelect.getWidth() - selectedCase.getWidth()) / 2;
-					double y = pt.getY() - (grdSelect.getHeight() - selectedCase.getHeight()) / 2;
-					grdSelect.relocate(x, y);
+					if(selectedCase != null){
+						Point2D pt = getGridCoord(gridContainer, selectedCase);
+						double x = pt.getX() - (grdSelect.getWidth() - selectedCase.getWidth()) / 2;
+						double y = pt.getY() - (grdSelect.getHeight() - selectedCase.getHeight()) / 2;
+						grdSelect.relocate(x, y);
+					}
+
 				}
 
 			}
@@ -120,6 +126,7 @@ public class EntrerGrilleController implements Initializable {
 			} else if (event.getButton() == MouseButton.SECONDARY) {
 				l.setText(" ");
 			}
+			
 			Point2D pt = getGridCoord(gridContainer, selectedCase);
 			double x = pt.getX() - (grdSelect.getWidth() - selectedCase.getWidth()) / 2;
 			double y = pt.getY() - (grdSelect.getHeight() - selectedCase.getHeight()) / 2;
