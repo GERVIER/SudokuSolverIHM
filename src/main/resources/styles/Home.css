@@ -1,34 +1,106 @@
-/*
- * Empty Stylesheet file.
- */
 
-.mainFxmlClass {
-
-}
 
 .selectGrille > Label{
-	-fx-border-color: red;
-	-fx-border-width: 2.0px;
-	-fx-border-radius: 2.0px;
-	-fx-background-color: white;
+	-fx-border-radius: 5px;
+	-fx-background-radius: 5px;
+	-fx-background-color:  linear-gradient(#CEFFF0, #BAE5D8);
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 2, 0 , 0 , 1 );
 }
+
+.selectGrille > Label:hover{
+	-fx-background-color:  linear-gradient(#BAE5D8, #9BBFB4);
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0 , 0 , 1 );
+}
+
+/*
+ * GRILLE ET SOUS GRILLE
+ */
 
 .sudokuGrille{
 	-fx-border-color: #646464;
-	-fx-border-width: 2.0px;
-	-fx-border-radius: 5.0px;
+	-fx-border-width: 2px;
+	-fx-border-radius: 5px;
 }
+
 .sousGrille{
 	-fx-border-color: #646464;
-	-fx-border-width: 2.0px;
 	-fx-background-color: white;
 }
 
 .sousGrille > Label{
 	-fx-border-color: #646464;
-	-fx-border-width: 1.0px;
+	-fx-border-width: 1px;
 }
 
 .sousGrille > Label:hover{
-	-fx-background-color: #f7d897;
+	-fx-background-color: #CEFFF0;
+}
+
+/*
+ * CSS DES BOUTONS
+ */
+.boutonBase{
+    -fx-background-insets: 1;
+
+    -fx-border-width: 0px;
+    -fx-border-radius: 150px;
+    -fx-background-radius: 150px;
+
+    -fx-text-fill: white;
+
+    -fx-padding: 8;
+}
+
+.boutonBase:hover{
+  -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 2, 0.0 , 0 , 1 );
+}
+
+.BTBleu{
+    -fx-background-color: linear-gradient(#337ab7, #2e6da4);
+}
+
+.BTBleu:hover{
+    -fx-background-color: linear-gradient(#2e6da4, #286090);
+}
+
+/* VIOLET
+*/
+
+.BTViolet{
+    -fx-background-color: linear-gradient(#5718FF, #4112BF);
+}
+
+.BTViolet:hover{
+    -fx-background-color: linear-gradient(#4112BF, #2B0C7F);
+}
+
+/* ROUGE
+*/
+.BTrouge{
+    -fx-background-color: linear-gradient(#d9534f, #d43f3a);
+}
+
+.BTrouge:hover{
+    -fx-background-color: linear-gradient(#d43f3a, #c9302c);
+}
+
+/* VERT
+*/
+
+.BTvert{
+    -fx-background-color: linear-gradient(#33b765, #2ea45b);
+}
+
+.BTvert:hover{
+    -fx-background-color: linear-gradient(#2ea45b, #28904f);
+}
+
+/* JAUNE
+*/
+.BTjaune{
+    -fx-background-color: linear-gradient(#b7a333, #a4922e);
+}
+
+.BTjaune:hover{
+    -fx-background-color: linear-gradient(#a4922e, #908028);
 }

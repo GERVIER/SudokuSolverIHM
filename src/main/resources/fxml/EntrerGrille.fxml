@@ -57,8 +57,8 @@
                   <Insets bottom="20.0" top="20.0" />
                </GridPane.margin>
                <styleClass>
-                  <String fx:value="button9X9" />
-                  <String fx:value="button" />
+                  <String fx:value="boutonBase" />
+                  <String fx:value="BTBleu" />
                </styleClass>
             </Button>
             <Button minHeight="50.0" minWidth="125.0" mnemonicParsing="false" text="Grille 16*16" GridPane.columnIndex="2" GridPane.rowIndex="1">
@@ -73,18 +73,14 @@
                   <Insets bottom="20.0" />
                </GridPane.margin>
                <styleClass>
-                  <String fx:value="button16x16" />
-                  <String fx:value="button" />
+                  <String fx:value="boutonBase" />
+                  <String fx:value="BTViolet" />
                </styleClass>
             </Button>
             <Button minHeight="50.0" minWidth="150.0" mnemonicParsing="false" text="Valider" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets bottom="20.0" />
                </GridPane.margin>
-               <styleClass>
-                  <String fx:value="buttonValidate" />
-                  <String fx:value="button" />
-               </styleClass>
                <font>
                   <Font size="24.0" />
                </font>
@@ -95,6 +91,10 @@
                      </image>
                   </ImageView>
                </graphic>
+               <styleClass>
+                  <String fx:value="boutonBase" />
+                  <String fx:value="BTvert" />
+               </styleClass>
             </Button>
          </children>
          <padding>
