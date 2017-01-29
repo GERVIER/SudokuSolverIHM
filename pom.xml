@@ -104,5 +104,11 @@
             </plugin>
         </plugins>
     </build>
-
+    <dependencies>
+        <dependency>
+            <groupId>com.guigarage</groupId>
+            <artifactId>responsivefx</artifactId>
+            <version>0.8</version>
+        </dependency>
+    </dependencies>
 </project>

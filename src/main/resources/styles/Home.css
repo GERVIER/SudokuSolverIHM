@@ -5,3 +5,30 @@
 .mainFxmlClass {
 
 }
+
+.selectGrille > Label{
+	-fx-border-color: red;
+	-fx-border-width: 2.0px;
+	-fx-border-radius: 2.0px;
+	-fx-background-color: white;
+}
+
+.sudokuGrille{
+	-fx-border-color: #646464;
+	-fx-border-width: 2.0px;
+	-fx-border-radius: 5.0px;
+}
+.sousGrille{
+	-fx-border-color: #646464;
+	-fx-border-width: 2.0px;
+	-fx-background-color: white;
+}
+
+.sousGrille > Label{
+	-fx-border-color: #646464;
+	-fx-border-width: 1.0px;
+}
+
+.sousGrille > Label:hover{
+	-fx-background-color: #f7d897;
+}
