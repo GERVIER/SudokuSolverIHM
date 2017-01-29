@@ -9,7 +9,7 @@
 
 .selectGrille > Label:hover{
 	-fx-background-color:  linear-gradient(#BAE5D8, #9BBFB4);
-	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0 , 0 , 1 );
+
 }
 
 /*

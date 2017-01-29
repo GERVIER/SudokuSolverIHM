@@ -57,7 +57,7 @@
                </graphic>
                <styleClass>
                   <String fx:value="boutonBase" />
-                  <String fx:value="BTViolet" />
+                  <String fx:value="BTjaune" />
                </styleClass>
             </Button>
          </children>

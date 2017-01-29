@@ -35,17 +35,15 @@
       </Pane>
       <GridPane alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="400.0" minWidth="200.0" HBox.hgrow="ALWAYS">
         <columnConstraints>
-          <ColumnConstraints />
-            <ColumnConstraints />
-            <ColumnConstraints halignment="CENTER" hgrow="NEVER" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" />
         </columnConstraints>
         <rowConstraints>
-          <RowConstraints minHeight="10.0" vgrow="NEVER" />
-          <RowConstraints maxHeight="70.0" minHeight="10.0" valignment="TOP" vgrow="NEVER" />
-            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="249.0" valignment="BOTTOM" vgrow="ALWAYS" />
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="20.0" vgrow="ALWAYS" />
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="20.0" valignment="TOP" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="200.0" valignment="BOTTOM" vgrow="ALWAYS" />
         </rowConstraints>
          <children>
-            <Button minHeight="50.0" minWidth="125.0" mnemonicParsing="false" text="Grille 9*9" GridPane.columnIndex="2">
+            <Button maxHeight="150.0" maxWidth="450.0" minHeight="50.0" minWidth="125.0" mnemonicParsing="false" text="Grille 9*9">
                <graphic>
                   <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -61,7 +59,7 @@
                   <String fx:value="BTBleu" />
                </styleClass>
             </Button>
-            <Button minHeight="50.0" minWidth="125.0" mnemonicParsing="false" text="Grille 16*16" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Button maxHeight="150.0" maxWidth="450.0" minHeight="50.0" minWidth="125.0" mnemonicParsing="false" text="Grille 16*16" GridPane.rowIndex="1">
                <graphic>
                   <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -70,16 +68,16 @@
                   </ImageView>
                </graphic>
                <GridPane.margin>
-                  <Insets bottom="20.0" />
+                  <Insets bottom="40.0" />
                </GridPane.margin>
                <styleClass>
                   <String fx:value="boutonBase" />
-                  <String fx:value="BTViolet" />
+                  <String fx:value="BTjaune" />
                </styleClass>
             </Button>
-            <Button minHeight="50.0" minWidth="150.0" mnemonicParsing="false" text="Valider" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <Button maxHeight="200.0" maxWidth="450.0" minHeight="50.0" minWidth="150.0" mnemonicParsing="false" text="Valider" GridPane.rowIndex="2">
                <GridPane.margin>
-                  <Insets bottom="20.0" />
+                  <Insets bottom="20.0" top="200.0" />
                </GridPane.margin>
                <font>
                   <Font size="24.0" />

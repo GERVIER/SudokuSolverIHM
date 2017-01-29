@@ -4,6 +4,7 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
 <GridPane styleClass="sousGrille" stylesheets="@../styles/Home.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
   <columnConstraints>
@@ -17,14 +18,41 @@
     <RowConstraints vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="40.0" text="1" />
-      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="40.0" text="1" GridPane.rowIndex="1" />
-      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="40.0" text="1" GridPane.rowIndex="2" />
-      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="40.0" text="1" GridPane.columnIndex="1" />
-      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="40.0" text="1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="40.0" text="1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="40.0" text="1" GridPane.columnIndex="2" />
-      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="40.0" text="1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="40.0" text="1" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="40.0" text="1">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="40.0" text="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="40.0" text="1" GridPane.rowIndex="2">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="40.0" text="1" GridPane.columnIndex="1">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="40.0" text="1" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="40.0" text="1" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="40.0" text="1" GridPane.columnIndex="2">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="40.0" text="1" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font></Label>
+      <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="40.0" minWidth="40.0" text="1" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <font>
+            <Font name="Cambria" size="24.0" />
+         </font></Label>
    </children>
 </GridPane>
