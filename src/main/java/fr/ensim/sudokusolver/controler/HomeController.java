@@ -28,6 +28,8 @@ public class HomeController implements Initializable {
 
 	@FXML
 	private Button enterGridButton;
+	@FXML
+	private Button scanGridButton;
 
 	/**
 	 * Initializes the controller class.
@@ -39,6 +41,7 @@ public class HomeController implements Initializable {
 	public void initialize(URL url, ResourceBundle rb) {
 		// TODO
 		enterGridButton.setOnAction(enterGridClick);
+		scanGridButton.setOnAction(goToScan);
 	}
 
 	public EventHandler<ActionEvent> enterGridClick = new EventHandler<ActionEvent>() {
@@ -50,6 +53,20 @@ public class HomeController implements Initializable {
 				stage = (Stage) b.getScene().getWindow();
 
 				switchToView("/fxml/EntrerGrille.fxml", stage);
+			}catch (IOException ex) {
+			}
+		}
+	};
+	
+	public EventHandler<ActionEvent> goToScan = new EventHandler<ActionEvent>() {
+		@Override
+		public void handle(ActionEvent event) {
+			try{
+				Stage stage;
+				Button b = (Button) event.getSource();
+				stage = (Stage) b.getScene().getWindow();
+
+				switchToView("/fxml/ScanGrille.fxml", stage);
 			}catch (IOException ex) {
 			}
 		}
