@@ -1,15 +1,18 @@
-
-
 .selectGrille > Label{
-	-fx-border-radius: 5px;
-	-fx-background-radius: 5px;
-	-fx-background-color:  linear-gradient(#CEFFF0, #BAE5D8);
-	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 2, 0 , 0 , 1 );
+	-fx-border-radius: 20.0px;
+	-fx-border-width: 1.0px;
+	-fx-border-color: black;
+	-fx-background-radius: 200.0px;
+	-fx-background-color: linear-gradient(#e9e2bc, #d3c56b);
+	-fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.6) , 2.0, 0.0 , 0.0 , 1.0 );
 }
 
 .selectGrille > Label:hover{
-	-fx-background-color:  linear-gradient(#BAE5D8, #9BBFB4);
+	-fx-background-color: linear-gradient(#d3c56b, #bcae53);
+}
 
+.fond{
+	-fx-background-color: white;
 }
 
 /*
@@ -17,23 +20,24 @@
  */
 
 .sudokuGrille{
-	-fx-border-color: #646464;
-	-fx-border-width: 2px;
-	-fx-border-radius: 5px;
+	-fx-border-color: white;
+	-fx-border-width: 2.0px;
+	-fx-border-radius: 5.0px;
 }
 
 .sousGrille{
-	-fx-border-color: #646464;
+	-fx-border-color: white;
 	-fx-background-color: white;
 }
 
 .sousGrille > Label{
-	-fx-border-color: #646464;
-	-fx-border-width: 1px;
+	-fx-border-color: white;
+	-fx-border-width: 1.0px;
+	-fx-background-color: #75b3ea;
 }
 
 .sousGrille > Label:hover{
-	-fx-background-color: #CEFFF0;
+	-fx-background-color: #508ec5;
 }
 
 /*
@@ -43,7 +47,7 @@
 .panneauAide{
 	-fx-background-color: #a2c4c9;
 	-fx-border-color: #333333;
-	-fx-border-width: 2px;
+	-fx-border-width: 2.0px;
 
 }
 
@@ -51,20 +55,20 @@
  * CSS DES BOUTONS
  */
 .boutonBase{
-    -fx-background-insets: 1;
+    -fx-background-insets: 1.0;
 
-    -fx-border-width: 0px;
-    -fx-border-radius: 150px;
-    -fx-background-radius: 150px;
+    -fx-border-width: 0.0px;
+    -fx-border-radius: 150.0px;
+    -fx-background-radius: 150.0px;
 
     -fx-text-fill: white;
 
-    -fx-padding: 8;
+    -fx-padding: 8.0;
 }
 
 
 .boutonBase:hover{
-  -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 2, 0.0 , 0 , 1 );
+  -fx-effect: dropshadow( three-pass-box , rgba(0.0,0.0,0.0,0.6) , 2.0, 0.0 , 0.0 , 1.0 );
 }
 
 .BTBlanc{
@@ -121,5 +125,41 @@
 }
 
 .BTjaune:hover{
-    -fx-background-color: linear-gradient(#a4922e, #908028);
+	-fx-background-color: linear-gradient(#a4922e, #908028);
+}
+
+/* TextField
+ */
+ 
+.text-area:readonly{
+ 	-fx-background-color: transparent;
+} 
+ 
+.text-area:readonly .scroll-pane:fitToWidth .viewport{
+ 	-fx-background-color: transparent;
+ }
+ 
+.text-area:readonly .scroll-pane:fitToWidth .viewport .content{
+	-fx-background-color: transparent;
+}
+
+/*
+ * Scroll bar
+ */
+.text-area:readonly .scroll-pane:fitToWidth .scroll-bar:vertical .thumb{
+	-fx-background-color: white;
+	-fx-background-radius: 50px;
+	-fx-border-color: #CCCCCC;
+	-fx-border-radius: 50px;
+	-fx-border-insets: 1px; 	
+}
+.text-area:readonly .scroll-pane:fitToWidth .scroll-bar:vertical{
+	-fx-background-color: transparent;
+}
+.text-area:readonly .scroll-pane:fitToWidth .scroll-bar:vertical .track{
+ 	-fx-background-color: transparent;
+}
+
+.text-area:readonly .scroll-pane:fitToWidth .scroll-bar:vertical .decrement-button .decrement-arrow, .text-area:readonly .scroll-pane:fitToWidth .scroll-bar:vertical .increment-button .increment-arrow{
+	-fx-background-color : white;
 }

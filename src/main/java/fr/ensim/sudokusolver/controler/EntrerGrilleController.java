@@ -45,7 +45,7 @@ public class EntrerGrilleController implements Initializable {
 	ArrayList<Label> labelList;
 	GridPane grdSelect;
 	Label selectedCase;
-	
+
 	@FXML
 	Button bt_valid;
 
@@ -89,8 +89,8 @@ public class EntrerGrilleController implements Initializable {
 				if ((double) newValue < gridContainer.getHeight()) {
 					sudokuGrid.setPrefHeight(newValue.doubleValue());
 					sudokuGrid.setPrefWidth(newValue.doubleValue());
-					
-					if(selectedCase != null){
+
+					if (selectedCase != null) {
 						Point2D pt = getGridCoord(gridContainer, selectedCase);
 						double x = pt.getX() - (grdSelect.getWidth() - selectedCase.getWidth()) / 2;
 						double y = pt.getY() - (grdSelect.getHeight() - selectedCase.getHeight()) / 2;
@@ -107,8 +107,8 @@ public class EntrerGrilleController implements Initializable {
 				if ((double) newValue < gridContainer.getWidth()) {
 					sudokuGrid.setPrefHeight(newValue.doubleValue());
 					sudokuGrid.setPrefWidth(newValue.doubleValue());
-					
-					if(selectedCase != null){
+
+					if (selectedCase != null) {
 						Point2D pt = getGridCoord(gridContainer, selectedCase);
 						double x = pt.getX() - (grdSelect.getWidth() - selectedCase.getWidth()) / 2;
 						double y = pt.getY() - (grdSelect.getHeight() - selectedCase.getHeight()) / 2;
@@ -131,16 +131,17 @@ public class EntrerGrilleController implements Initializable {
 					selectedCase.setStyle("");
 				}
 				selectedCase = l;
-				selectedCase.setStyle("-fx-background-color: #9BBFB4;");
+				selectedCase.setStyle("-fx-background-color: #3379b6;");
+
+				Point2D pt = getGridCoord(gridContainer, selectedCase);
+				double x = pt.getX() - (grdSelect.getWidth() - selectedCase.getWidth()) / 2;
+				double y = pt.getY() - (grdSelect.getHeight() - selectedCase.getHeight()) / 2;
+				grdSelect.relocate(x, y);
+				grdSelect.setVisible(true);
+
 			} else if (event.getButton() == MouseButton.SECONDARY) {
 				l.setText(" ");
 			}
-			
-			Point2D pt = getGridCoord(gridContainer, selectedCase);
-			double x = pt.getX() - (grdSelect.getWidth() - selectedCase.getWidth()) / 2;
-			double y = pt.getY() - (grdSelect.getHeight() - selectedCase.getHeight()) / 2;
-			grdSelect.relocate(x, y);
-			grdSelect.setVisible(true);
 
 		}
 	};
@@ -168,17 +169,17 @@ public class EntrerGrilleController implements Initializable {
 
 		return new Point2D(x, y);
 	}
-	
+
 	private EventHandler<ActionEvent> Valid = new EventHandler<ActionEvent>() {
 		@Override
 		public void handle(ActionEvent event) {
-			try{
+			try {
 				Stage stage;
 				Button b = (Button) event.getSource();
 				stage = (Stage) b.getScene().getWindow();
 
-				switchToView("/fxml/Resolution.fxml", stage);
-			}catch (IOException ex) {
+				switchToView("/fxml/ChoixAide.fxml", stage);
+			} catch (IOException ex) {
 			}
 		}
 	};
@@ -204,5 +205,5 @@ public class EntrerGrilleController implements Initializable {
 		stage.setHeight(h);
 		stage.setWidth(w);
 	}
-	
+
 }

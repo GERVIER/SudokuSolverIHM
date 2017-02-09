@@ -120,16 +120,17 @@ public class ResolutionController implements Initializable {
 					selectedCase.setStyle("");
 				}
 				selectedCase = l;
-				selectedCase.setStyle("-fx-background-color: #9BBFB4;");
+				selectedCase.setStyle("-fx-background-color: #3379b6;");
+				
+				Point2D pt = getGridCoord(gridContainer, selectedCase);
+				double x = pt.getX() - (grdSelect.getWidth() - selectedCase.getWidth()) / 2;
+				double y = pt.getY() - (grdSelect.getHeight() - selectedCase.getHeight()) / 2;
+				grdSelect.relocate(x, y);
+				grdSelect.setVisible(true);
+				
 			} else if (event.getButton() == MouseButton.SECONDARY) {
 				l.setText(" ");
 			}
-			
-			Point2D pt = getGridCoord(gridContainer, selectedCase);
-			double x = pt.getX() - (grdSelect.getWidth() - selectedCase.getWidth()) / 2;
-			double y = pt.getY() - (grdSelect.getHeight() - selectedCase.getHeight()) / 2;
-			grdSelect.relocate(x, y);
-			grdSelect.setVisible(true);
 
 		}
 	};
@@ -144,7 +145,7 @@ public class ResolutionController implements Initializable {
 			selectedCase.setText(s.getText());
 		}
 	};
-	
+
 	private Point2D getGridCoord(Node p, Node t) {
 		double x = 0;
 		double y = 0;

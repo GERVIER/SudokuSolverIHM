@@ -4,6 +4,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -12,11 +13,11 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<HBox minHeight="400.0" minWidth="600.0" stylesheets="@../styles/Home.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ensim.sudokusolver.controler.ResolutionController">
+<HBox minHeight="400.0" minWidth="600.0" styleClass="fond" stylesheets="@../styles/Home.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ensim.sudokusolver.controler.ResolutionController">
    <children>
       <Pane fx:id="gridContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="400.0" minWidth="400.0" HBox.hgrow="ALWAYS">
          <children>
-            <GridPane fx:id="sudokuGrid" styleClass="sudokuGrille" stylesheets="@../styles/Home.css">
+            <GridPane fx:id="sudokuGrid" minHeight="400.0" minWidth="400.0" styleClass="sudokuGrille" stylesheets="@../styles/Home.css">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" />
                   <ColumnConstraints hgrow="SOMETIMES" />
@@ -58,6 +59,13 @@
          <HBox.margin>
             <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
          </HBox.margin>
+         <center>
+            <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis magna massa. Vestibulum ut tempor justo. Curabitur massa mauris, tincidunt ut ultrices ultricies, placerat in est. Morbi felis eros, tristique lacinia gravida vel, efficitur ut lorem. Cras id condimentum justo. Sed in commodo ligula, hendrerit consequat ex. Maecenas eget euismod mauris. Mauris sed sem id orci consequat posuere. Integer finibus, erat nec molestie tristique, odio orci hendrerit velit, ut placerat ante eros vel urna. Nullam laoreet maximus fermentum. Pellentesque laoreet in velit non consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla maximus venenatis elit, eu cursus sem semper eget." wrapText="true" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="5.0" />
+               </BorderPane.margin>
+            </TextArea>
+         </center>
       </BorderPane>
    </children>
 </HBox>

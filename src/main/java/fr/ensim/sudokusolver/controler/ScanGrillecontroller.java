@@ -78,7 +78,6 @@ public class ScanGrillecontroller implements Initializable {
 				} catch (IOException ex) {
 					Logger.getLogger(ScanGrillecontroller.class.getName()).log(Level.SEVERE, null, ex);
 				}
-
 			}
 		}
 		

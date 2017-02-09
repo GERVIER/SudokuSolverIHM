@@ -39,7 +39,6 @@ public class HomeController implements Initializable {
 	 */
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
-		// TODO
 		enterGridButton.setOnAction(enterGridClick);
 		scanGridButton.setOnAction(goToScan);
 	}
