@@ -163,3 +163,7 @@
 .text-area:readonly .scroll-pane:fitToWidth .scroll-bar:vertical .decrement-button .decrement-arrow, .text-area:readonly .scroll-pane:fitToWidth .scroll-bar:vertical .increment-button .increment-arrow{
 	-fx-background-color : white;
 }
+
+.text-area:readonly .scroll-pane:fitToWidth .scroll-bar:vertical .decrement-button:hover, .text-area:readonly .scroll-pane:fitToWidth .scroll-bar:vertical .increment-button:hover{
+	-fx-background-color : transparent;
+}

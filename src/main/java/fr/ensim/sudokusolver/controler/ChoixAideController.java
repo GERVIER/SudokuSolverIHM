@@ -60,7 +60,6 @@ public class ChoixAideController implements ChangeListener<Number>, Initializabl
 	 */
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
-		table.setText("Information here");
 		fontSizeModification(button1);
 		fontSizeModification(button2);
 		fontSizeModification(button3);
