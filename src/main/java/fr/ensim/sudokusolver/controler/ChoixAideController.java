@@ -67,7 +67,6 @@ public class ChoixAideController implements ChangeListener<Number>, Initializabl
 		fontSizeModification(button5);
 		fontSizeModification(button6);
 		fontSizeModification(buttonValider);
-
 	}
 
 	public void fontSizeModification(final Button button) {

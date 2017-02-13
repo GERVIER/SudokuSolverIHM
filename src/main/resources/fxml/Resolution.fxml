@@ -46,7 +46,7 @@
             </Label>
          </top>
          <bottom>
-            <Button mnemonicParsing="false" text="Changer le niveau d'aide" BorderPane.alignment="CENTER">
+            <Button fx:id="return_to_help" mnemonicParsing="false" text="Changer le niveau d'aide" BorderPane.alignment="CENTER">
                <BorderPane.margin>
                   <Insets bottom="10.0" />
                </BorderPane.margin>
