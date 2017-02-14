@@ -32,7 +32,7 @@ public class ChoixAideController implements ChangeListener<Number>, Initializabl
 	private double width;
 	private double height;
 	private int fontSize = 10;
-	
+
 	private String lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis magna massa. Vestibulum ut tempor justo. Curabitur massa mauris, tincidunt ut ultrices ultricies, placerat in est. Morbi felis eros, tristique lacinia gravida vel, efficitur ut lorem. Cras id condimentum justo. Sed in commodo ligula, hendrerit consequat ex. Maecenas eget euismod mauris. Mauris sed sem id orci consequat posuere. Integer finibus, erat nec molestie tristique, odio orci hendrerit velit, ut placerat ante eros vel urna. Nullam laoreet maximus fermentum. Pellentesque laoreet in velit non consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla maximus venenatis elit, eu cursus sem semper eget.";
 
 	@FXML

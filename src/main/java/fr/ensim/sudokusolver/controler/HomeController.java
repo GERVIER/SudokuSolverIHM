@@ -46,27 +46,27 @@ public class HomeController implements Initializable {
 	public EventHandler<ActionEvent> enterGridClick = new EventHandler<ActionEvent>() {
 		@Override
 		public void handle(ActionEvent event) {
-			try{
+			try {
 				Stage stage;
 				Button b = (Button) event.getSource();
 				stage = (Stage) b.getScene().getWindow();
 
 				switchToView("/fxml/EntrerGrille.fxml", stage);
-			}catch (IOException ex) {
+			} catch (IOException ex) {
 			}
 		}
 	};
-	
+
 	public EventHandler<ActionEvent> goToScan = new EventHandler<ActionEvent>() {
 		@Override
 		public void handle(ActionEvent event) {
-			try{
+			try {
 				Stage stage;
 				Button b = (Button) event.getSource();
 				stage = (Stage) b.getScene().getWindow();
 
 				switchToView("/fxml/ScanGrille.fxml", stage);
-			}catch (IOException ex) {
+			} catch (IOException ex) {
 			}
 		}
 	};

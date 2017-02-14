@@ -1,6 +1,5 @@
 package fr.ensim.sudokusolver.controler;
 
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -30,7 +29,6 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
-
 /**
  * FXML Controller class
  *
@@ -43,7 +41,7 @@ public class ScanGrillecontroller implements Initializable {
 
 	@FXML
 	private Button bt_Resolution;
-	
+
 	@FXML
 	private ImageView img;
 
@@ -80,7 +78,7 @@ public class ScanGrillecontroller implements Initializable {
 				}
 			}
 		}
-		
+
 		gridContainer.widthProperty().addListener(new ChangeListener<Number>() {
 			@Override
 			public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
@@ -112,11 +110,10 @@ public class ScanGrillecontroller implements Initializable {
 					Number newSceneWidth) {
 				imgW = (double) newSceneWidth;
 				if ((double) newSceneWidth < img.getFitHeight()) {
-					img.setFitHeight(imgW-150);
-					img.setFitWidth(imgW-150);
+					img.setFitHeight(imgW - 150);
+					img.setFitWidth(imgW - 150);
 				}
-				
-				
+
 				img.setFitWidth(imgW - 150);
 				System.out.println(newSceneWidth);
 				System.out.println(newSceneWidth);
@@ -130,29 +127,27 @@ public class ScanGrillecontroller implements Initializable {
 					Number newSceneHeight) {
 				imgH = (double) newSceneHeight;
 				if ((double) newSceneHeight < img.getFitWidth()) {
-					img.setFitHeight(imgH-150);
-					img.setFitWidth(imgH-150);
+					img.setFitHeight(imgH - 150);
+					img.setFitWidth(imgH - 150);
 				}
 			}
 		});
 	}
-	
+
 	public EventHandler<ActionEvent> goToReso = new EventHandler<ActionEvent>() {
 		@Override
 		public void handle(ActionEvent event) {
-			try{
+			try {
 				Stage stage;
 				Button b = (Button) event.getSource();
 				stage = (Stage) b.getScene().getWindow();
 				switchToView("/fxml/ChoixAide.fxml", stage);
-			}catch (IOException ex) {
+			} catch (IOException ex) {
 				ex.printStackTrace();
 			}
 		}
 	};
-	
-	
-	
+
 	/**
 	 * Permet de changer de vue
 	 *

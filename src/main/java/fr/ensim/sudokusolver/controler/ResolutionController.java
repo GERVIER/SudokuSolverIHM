@@ -44,7 +44,7 @@ public class ResolutionController implements Initializable {
 
 	@FXML
 	Button return_to_help;
-	
+
 	ArrayList<Label> labelList;
 	GridPane grdSelect;
 	Label selectedCase;
@@ -129,13 +129,13 @@ public class ResolutionController implements Initializable {
 				}
 				selectedCase = l;
 				selectedCase.setStyle("-fx-background-color: #3379b6;");
-				
+
 				Point2D pt = getGridCoord(gridContainer, selectedCase);
 				double x = pt.getX() - (grdSelect.getWidth() - selectedCase.getWidth()) / 2;
 				double y = pt.getY() - (grdSelect.getHeight() - selectedCase.getHeight()) / 2;
 				grdSelect.relocate(x, y);
 				grdSelect.setVisible(true);
-				
+
 			} else if (event.getButton() == MouseButton.SECONDARY) {
 				l.setText(" ");
 			}
@@ -182,7 +182,7 @@ public class ResolutionController implements Initializable {
 			}
 		}
 	};
-	
+
 	/**
 	 * Permet de changer de vue
 	 *
@@ -204,5 +204,5 @@ public class ResolutionController implements Initializable {
 		stage.setHeight(h);
 		stage.setWidth(w);
 	}
-	
+
 }
