@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<HBox minHeight="400.0" minWidth="600.0" styleClass="fond" stylesheets="@../styles/Home.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.ensim.sudokusolver.controler.EntrerGrilleController">
+   <children>
+      <Pane fx:id="gridContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="400.0" minWidth="400.0" HBox.hgrow="ALWAYS">
+         <children>
+            <GridPane fx:id="sudokuGrid" minHeight="400.0" minWidth="400.0" styleClass="sudokuGrille" stylesheets="@../styles/Home.css">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" />
+                <ColumnConstraints hgrow="SOMETIMES" />
+                <ColumnConstraints hgrow="SOMETIMES" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children>
+         <HBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </HBox.margin>
+      </Pane>
+      <GridPane alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="400.0" minWidth="200.0" HBox.hgrow="ALWAYS">
+        <columnConstraints>
+            <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="10.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="20.0" vgrow="ALWAYS" />
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="20.0" valignment="TOP" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="200.0" valignment="BOTTOM" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <Button maxHeight="150.0" maxWidth="450.0" minHeight="50.0" minWidth="125.0" mnemonicParsing="false" text="Grille 9*9">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/ic_grillePT.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <GridPane.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </GridPane.margin>
+               <styleClass>
+                  <String fx:value="boutonBase" />
+                  <String fx:value="BTBleu" />
+               </styleClass>
+            </Button>
+            <Button maxHeight="150.0" maxWidth="450.0" minHeight="50.0" minWidth="125.0" mnemonicParsing="false" text="Grille 16*16" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/ic_grillePT.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <GridPane.margin>
+                  <Insets bottom="40.0" />
+               </GridPane.margin>
+               <styleClass>
+                  <String fx:value="boutonBase" />
+                  <String fx:value="BTjaune" />
+               </styleClass>
+            </Button>
+            <Button fx:id="bt_valid" maxHeight="200.0" maxWidth="450.0" minHeight="50.0" minWidth="150.0" mnemonicParsing="false" text="Valider" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="20.0" top="200.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/ic_tick.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="boutonBase" />
+                  <String fx:value="BTvert" />
+               </styleClass>
+            </Button>
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </GridPane>
+   </children>
+</HBox>
