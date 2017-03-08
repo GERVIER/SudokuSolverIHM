@@ -22,17 +22,17 @@
 	
 		<mkdir dir="project" />
 		<copy todir="project">
-			<fileset dir="D:\Rémy\Bureau\SudokuSolverIHM">
-				<include name="src\main\resources/**" />
-			</fileset>
-		</copy>
-		<copy todir="project">
-			<fileset dir="D:\Rémy\Bureau\SudokuSolverIHM">
+			<fileset dir="D:\Test\SudokuSolverIHM">
 				<include name="src\test\java/**" />
 			</fileset>
 		</copy>
 		<copy todir="project">
-			<fileset dir="D:\Rémy\Bureau\SudokuSolverIHM">
+			<fileset dir="D:\Test\SudokuSolverIHM">
+				<include name="src\main\resources/**" />
+			</fileset>
+		</copy>
+		<copy todir="project">
+			<fileset dir="D:\Test\SudokuSolverIHM">
 				<include name="src\main\java/**" />
 			</fileset>
 		</copy>
@@ -145,7 +145,7 @@
 			includeDT="false"
 			offlineAllowed="true"
 			outdir="${basedir}/deploy"
-			outfile="SudokuSolverIHM" nativeBundles="exe"
+			outfile="SudokuSolverIHM" nativeBundles="none"
 			updatemode="background" >
 	
 			<fx:platform basedir="${java.home}"/>

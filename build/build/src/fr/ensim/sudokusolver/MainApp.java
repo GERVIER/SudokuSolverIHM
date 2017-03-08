@@ -14,7 +14,7 @@ public class MainApp extends Application {
 
 		Scene scene = new Scene(root);
 
-		stage.setTitle("JavaFX and Maven");
+		stage.setTitle("SudokuSolver");
 
 		stage.setMinHeight(450);
 		stage.setMinWidth(700);
