@@ -22,18 +22,18 @@
 	
 		<mkdir dir="project" />
 		<copy todir="project">
-			<fileset dir="C:\Users\rgerv\git\SudokuSolverIHM">
+			<fileset dir="D:\Rémy\Bureau\SudokuSolverIHM">
+				<include name="src\main\resources/**" />
+			</fileset>
+		</copy>
+		<copy todir="project">
+			<fileset dir="D:\Rémy\Bureau\SudokuSolverIHM">
 				<include name="src\test\java/**" />
 			</fileset>
 		</copy>
 		<copy todir="project">
-			<fileset dir="C:\Users\rgerv\git\SudokuSolverIHM">
+			<fileset dir="D:\Rémy\Bureau\SudokuSolverIHM">
 				<include name="src\main\java/**" />
-			</fileset>
-		</copy>
-		<copy todir="project">
-			<fileset dir="C:\Users\rgerv\git\SudokuSolverIHM">
-				<include name="src\main\resources/**" />
 			</fileset>
 		</copy>
 	
